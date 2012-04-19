@@ -26,7 +26,8 @@ def test_theme_api(app):
     assert set(Theme.themes.keys()) == \
            set(['basic', 'default', 'scrolls', 'agogo', 'sphinxdoc', 'haiku',
                 'traditional', 'testtheme', 'ziptheme', 'epub', 'nature',
-                'pyramid'])
+                'pyramid', 'mobi',
+                'epub_simple', 'mobi_simple', 'basic_simple'])
     assert Theme.themes['testtheme'][1] is None
     assert isinstance(Theme.themes['ziptheme'][1], zipfile.ZipFile)
 

@@ -159,6 +159,7 @@ class Config(object):
         latex_docclass = ({}, None),
         # now deprecated - use latex_elements
         latex_preamble = ('', None),
+        latex_contentsname = ('Contents', None),
 
         # text options
         text_sectionchars = ('*=-~"+`', 'env'),
